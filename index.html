@@ -4,80 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursive Grep</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media',
+            theme: {
+                extend: {}
+            }
         }
-        header {
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .services {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services li {
-            background: #444;
-            padding: 10px;
-            margin-bottom: 5px;
-            border-radius: 5px;
-        }
-        a {
-            color: #fff;
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Recursive Grep</h1>
-        <p>Your Partner in AI Innovation</p>
-    </header>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Recursive Grep is a leading company that empowers early stage startups and large enterprises to launch AI-centric products. Our mission is to democratize AI by providing accessible and scalable solutions that drive innovation and growth.</p>
-        <h2>Our Services</h2>
-        <ul class="services">
-            <li>AI Strategy Development</li>
-            <li>Data Science & Machine Learning</li>
-            <li>Search and Big Data Analytics Solutions</li>
-            <li>Full Stack Software Development</li>
-            <li>AI Integration Services</li>
-        </ul>
-        <h2>Contact Us</h2>
-        <p>For any inquiries or to schedule a consultation, please feel free to contact us.</p>
-        <address>
-            <strong>Email:</strong> <a href="mailto:contact@recursivegrep.com">contact@recursivegrep.com</a>
-        </address>
-    </div>
-    <footer>
-        <p>&copy; 2025 Recursive Grep. All rights reserved.</p>
+<body class="bg-white dark:bg-black text-black dark:text-white min-h-screen flex flex-col">
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12">
+
+        <!-- Header -->
+        <header>
+            <h1 class="text-4xl font-bold mb-16">Recursive Grep</h1>
+        </header>
+
+        <!-- Who Are We -->
+        <section id="who-we-are" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6">Who We Are</h2>
+            <p class="text-lg max-w-2xl">
+                Recursive Grep is a tight-knit team of under 10 members based in the US. We’re passionate about empowering small businesses with AI-driven solutions to fuel innovation and growth.
+            </p>
+        </section>
+
+        <!-- Our Products -->
+        <section id="products" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6">Our Products</h2>
+            <div class="flex flex-col gap-8 max-w-2xl">
+                <div class="p-6 bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4"><a href="https://sbur.com" class="underline hover:text-gray-600 dark:hover:text-gray-300">Sbur</a></h3>
+                    <p>
+                        Sbur Founders Community offers an On-Demand Advisory Board, blending AI insights with the expertise of industry veterans to elevate your venture to new heights.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4"><a href="https://aihackerjobs.com" class="underline hover:text-gray-600 dark:hover:text-gray-300">AI Hacker Jobs</a></h3>
+                    <p>
+                        An AI-powered job board that streamlines hiring by connecting businesses and job seekers with automated, efficient recruitment processes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+            <p class="text-lg">
+                Reach out to us at <a href="mailto:contact@recursivegrep.com" class="underline hover:text-gray-600 dark:hover:text-gray-300">contact@recursivegrep.com</a> for inquiries or collaboration.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 px-6 bg-gray-100 dark:bg-neutral-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 Recursive Grep. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
